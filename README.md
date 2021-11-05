@@ -8,15 +8,15 @@ Contains:
 
 	- timesheetGenGUI.exe
 	
-	Executable which opens up a GUI where the user can choose files and dates from which at timesheet is generated
+		- Executable which opens up a GUI where the user can choose files and dates from which at timesheet is generated
 	
 	- timesheetTemplate.docx
 	
-	Timesheet template document which must be in same location that timesheetGenGUI.exe is run
+		- Timesheet template document which must be in same location that timesheetGenGUI.exe is run
 	
 	- source
 	
-	Python source code used in timesheetGenGUI.exe
+		- Python source code used in timesheetGenGUI.exe
 
 
 ## Report Form Filler
@@ -29,6 +29,6 @@ Contains:
 
 	- source
 	
-	Python source code
+		- Python source code
 	
 	TODO: executable
