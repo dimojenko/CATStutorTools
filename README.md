@@ -6,11 +6,11 @@ Reads in a calendar file (.ics) and textfile of student names to output a MS Wor
 
 Contains\:
 
-	- timesheetGenGUI.exe: executable which opens up a GUI where the user can choose files and dates from which a timesheet is generated
-	
-	- timesheetTemplate.docx: timesheet template document which must be in same location that timesheetGenGUI.exe is run
-	
-	- source: Python source code used in timesheetGenGUI.exe
+- timesheetGenGUI.exe: executable which opens up a GUI where the user can choose files and dates from which a timesheet is generated
+
+- timesheetTemplate.docx: timesheet template document which must be in same location that timesheetGenGUI.exe is run
+
+- source: Python source code used in timesheetGenGUI.exe
 
 
 ## Report Form Filler
@@ -21,6 +21,6 @@ Form with the use of dropdown selections.
 
 Contains\:
 
-	- source: Python source code
-	
-	TODO: executable
+- source: Python source code
+
+TODO: executable
