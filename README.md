@@ -7,9 +7,7 @@ Reads in a calendar file (.ics) and textfile of student names to output a MS Wor
 ### Contents:
 
 - timesheetGenGUI.exe: executable which opens up a GUI where the user can choose files and dates from which a timesheet is generated
-
 - timesheetTemplate.docx: timesheet template document which must be in same location that timesheetGenGUI.exe is run
-
 - source: Python source code used in timesheetGenGUI.exe
 
 ### Guide
@@ -24,22 +22,28 @@ needed calendar file, named with the user's email address. The Timesheet Generat
 so it will need to be re-downloaded before each use if any changes have been made to the schedule. 
 
 The Timesheet Generator is intended for use with CATS tutor meetings with the summary (meeting name) formatted as:
+
 	tutorLastName-studentLastName-Course-Sport
+	
 If the session is with multiple students, use '/' to separate names. The same sport will be used if there are multiple students in
 a session.
 
 Also neccessary to fully run the Timesheet Generator is a textfile of student names, from which first names are matched to last names 
 listed in meetings and included in the generated timesheet. This textfile should have the following format:
-	  tutor:
-		tutor's last name, tutor's first name
-		students:
-		student's last name, student's first name
-		...
+
+	tutor:
+	tutor's last name, tutor's first name
+	students:
+	student's last name, student's first name
+	...
 
 The output file will be named dependent on the input dates and the file of names if included. If the namesFile is included, the output
 file will be named:
+
 	<tutor's last name>_timesheet_<startDate>_to_<endDate>.docx
+	
 Otherwise the output file will be named:
+
 	timesheet_<startDate>_to_<endDate>.docx
 
 **Note that if student's share a last name, their session may not be properly recorded in the timesheet and will need to be manually
@@ -55,5 +59,4 @@ Form with the use of dropdown selections.
 ### Contents:
 
 - source: Python source code
-
 TODO: executable
