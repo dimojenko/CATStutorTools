@@ -37,8 +37,8 @@ listed in meetings and included in the generated timesheet. This textfile should
 	student's last name, student's first name
 	...
 
-The output file will be named dependent on the input dates and the file of names if included. If the namesFile is included, the output
-file will be named:
+The output file will be saved in the location that the Timesheet Generator is run, and named dependent on the input dates and the 
+file of names if included. If the namesFile is included, the output file will be named:
 
 	<tutor's last name>_timesheet_<startDate>_to_<endDate>.docx
 	
