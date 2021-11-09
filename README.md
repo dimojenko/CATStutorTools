@@ -57,6 +57,5 @@ Tampermonkey. This allows a tutor to easily fill out the majority of the Tutor R
 Form with the use of dropdown selections.
 
 ### Contents:
-
 - source: Python source code
 TODO: executable
