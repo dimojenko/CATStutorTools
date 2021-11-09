@@ -4,13 +4,15 @@ Useful tools for CATS tutors.
 ## Timesheet Generator
 Reads in a calendar file (.ics) and textfile of student names to output a MS Word document (.docx) in CATS timesheet format.
 
-### Contents:
+### Contents
+------------
 
 - timesheetGenGUI.exe: executable which opens up a GUI where the user can choose files and dates from which a timesheet is generated
 - timesheetTemplate.docx: timesheet template document which must be in same location that timesheetGenGUI.exe is run
 - source: Python source code used in timesheetGenGUI.exe
 
 ### Guide
+---------
 For users who don't care to mess with the Python source code, only the following two files need to be downloaded and saved in the 
 same folder:
   - timesheetGenGUI.exe
