@@ -1,9 +1,9 @@
 # CATStutorTools
-================
+----------------
 Useful tools for CATS tutors.
 
 ## Timesheet Generator
-======================
+----------------------
 Reads in a calendar file (.ics) and textfile of student names to output a MS Word document (.docx) in CATS timesheet format.
 
 ### Contents:
@@ -53,7 +53,7 @@ Otherwise the output file will be named:
   
   
 ## Report Form Filler
-=====================
+---------------------
 Reads in a calendar file (.ics) and textfile of student names to
 output a Javascript file to copy/paste into a browser code insertion tool such as
 Tampermonkey. This allows a tutor to easily fill out the majority of the Tutor Report 
