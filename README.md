@@ -48,6 +48,7 @@ Otherwise the output file will be named:
 
 **Note that if student's share a last name, their session may not be properly recorded in the timesheet and will need to be manually
   checked and edited if needed.
+  
 **In any case, it is recommended to check that the generated timesheet correctly matches your schedule, especially if sessions have
   been modified in any way. 
   
@@ -63,4 +64,4 @@ Form with the use of dropdown selections.
 
 ## Contact
 If you have any questions, you can reach me at:
-- dmojsejenko@gmail.com
+dmojsejenko@gmail.com
