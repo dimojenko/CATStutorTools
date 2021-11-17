@@ -48,7 +48,8 @@ Otherwise the output file will be named:
 
 **Note that if student's share a last name, their session may not be properly recorded in the timesheet and will need to be manually
   checked and edited if needed.
-  
+**In any case, it is recommended to check that the generated timesheet correctly matches your schedule, especially if sessions have
+  been modified in any way. 
   
 ## Report Form Filler
 Reads in a calendar file (.ics) and textfile of student names to
@@ -59,3 +60,7 @@ Form with the use of dropdown selections.
 ### Contents:
 - source: Python source code
 - TODO: executable
+
+## Contact
+If you have any questions, you can reach me at:
+- dmojsejenko@gmail.com
