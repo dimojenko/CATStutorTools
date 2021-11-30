@@ -7,7 +7,7 @@
 	Form with the use of dropdown selections. 
 
 	requires:
-		* the following files to be in the runpath of timesheetGen.py:
+		* the following files to be in the runpath of repFormFiller.py:
 			* calendar2csv.py
 			* csv2timesheet.py
 """
@@ -63,7 +63,6 @@ def repFormFiller(inputICS, namesFile='none'):
 	# generate csv file of meetings from input calendar file
 	todayDate = date.today()
 	todayDateStr = todayDate.strftime("%m/%d/%y")
-	print(todayDateStr)
 	inputCSV = cal2csv(inputICS, todayDateStr)
 	
 	with open(inputCSV, 'r') as inCSV, open('outputJS.js', 'w') as outputText:
