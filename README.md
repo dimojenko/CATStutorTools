@@ -29,7 +29,8 @@ If the session is with multiple students, use '/' to separate names. The same sp
 a session.
 
 Also neccessary to fully run the Timesheet Generator is a textfile of student names, from which first names are matched to last names 
-listed in meetings and included in the generated timesheet. This textfile should have the following format:
+listed in meetings and included in the generated timesheet. A template file of names (namesList.txt) is provided and should be 
+filled in with the following format:
 
 	tutor:
 	tutor's last name, tutor's first name
