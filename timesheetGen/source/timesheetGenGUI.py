@@ -20,9 +20,9 @@ command line usage:
 	- [namesFile] is an optional argument to provide a file (.txt) of names with
 	  the format:
 	  	tutor:
-		[tutor's last name], [tutor's first name]
+		tutor's last name, tutor's first name
 		students:
-		[student's last name], [student's first name]
+		student's last name, student's first name
 		...
 	- The optional flag -c can be included to keep the generated (.csv) file that
 	  is otherwise deleted after use

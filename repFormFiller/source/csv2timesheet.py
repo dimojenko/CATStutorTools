@@ -19,9 +19,9 @@ command line usage:
 	- [namesFile] is an optional argument to provide a file (.txt) of names with
 	  the format:
 	  	tutor:
-		[tutor's last name], [tutor's first name]
+		tutor's last name, tutor's first name
 		students:
-		[student's last name], [student's first name]
+		student's last name, student's first name
 		...
 
 The optional argument [namesFile] must be included for the first names of students

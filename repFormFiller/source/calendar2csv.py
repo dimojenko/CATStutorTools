@@ -5,7 +5,6 @@ This script parses a google calendar file (.ics) based on input dates to produce
 a (.csv) file of meetings. It is intended for use with CATS tutor meetings with
 the summary (meeting name) formatted as:
 	tutorLastName-studentLastName-Course-Sport
-If the session is with multiple students, use '/' to separate names.
 
 command line usage:
 	python3 calendar2csv.py inputICS -s [startDate] -e [endDate]
@@ -181,14 +180,6 @@ def calendar2csv(inputICS, startDate='01/01/1970', endDate='12/31/9999'):
 	for mtg in newMtgs:
 		if mtg not in outList:
 			outList.append(mtg)
-
-	# handle meeting cases with multiple students
-	for mtg in list(outList):	# need to iterate over list of list to add/remove elements in loop
-		if '/' in mtg[1]:
-			for name in mtg[1].split('/'):
-				newMtg = [mtg[0], name, mtg[2], mtg[3], mtg[4], mtg[5]] # may need to change sport
-				outList.append(newMtg)
-			outList.remove(mtg)
 
 	# sort output rows by date and time
 	outList.sort(key=lambda i: (dateStr2Obj(i[0]),i[4]))
