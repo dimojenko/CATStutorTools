@@ -55,8 +55,8 @@ Otherwise the output file will be named:
   been modified in any way. 
   
 **KNOWN ISSUES:
-Date widgets don't work for Mac version and dates have to be entered manually. The formatting on the Mac version of the generated
-Word document is also slightly different. 
+  Date widgets don't work for Mac version and dates have to be entered manually. The formatting on the Mac version of the generated
+  Word document is also slightly different. 
   
 ## Report Form Filler
 Reads in a calendar file (.ics) and textfile of student names to
@@ -67,6 +67,24 @@ Form with the use of dropdown selections.
 ### Contents:
 - source: Python source code
 - TODO: executable
+
+### Guide
+---------
+First select the last name of the student from the first dropdown. If the list is empty, you may need to recreate the Javascript file, or a hard refresh of the browser may be necessary. Once the last name of the student is chosen, the next dropdown is
+populated with the first names of students with the chosen last name. After the first name of the student is selected, choose 
+from the available times in the next dropdown, and then choose the class after that. 
+
+Once the "Populate" button is pressed, each field on the page is filled in with the chosen data from the dropdowns. Then the 
+"Submit" button can be pressed to continue to the next page. For the second page, when the "Populate" button is pressed, 
+the current time is inserted into the session finishing time, and the other fields are filled in as if it was a zoom session 
+that was completed with the student arriving on time. The fields can also be manually changed to whatever is needed.
+
+Once the second page has been submitted and the "Populate" button is used for the third page, the fields are filled out as if 
+the student showed up with their materials in a conducive location where homework was worked on and no upcoming assignments. 
+Again, these fields can be manually adjusted. If the signature has been setup correctly, then it should fill in as well; 
+otherwise it will need to be drawn manually. Once "Submit" is hit again, the whole form is submitted.
+
+**The browser will likely need to a hard refresh to clear the cache and function properly. This can be done with "Shift+F5" in Chrome on Windows, and "Command+Shift+r" in Chrome on Mac. 
 
 ## Contact
 If you have any questions, you can reach me at:
