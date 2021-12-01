@@ -6,6 +6,7 @@ Reads in a calendar file (.ics) and textfile of student names to output a MS Wor
 
 ### Contents:
 - timesheetGenGUI.exe: executable which opens up a GUI where the user can choose files and dates from which a timesheet is generated
+- timesheetGenGUImac: executable for Mac systems
 - timesheetTemplate.docx: timesheet template document which must be in same location that timesheetGenGUI.exe is run
 - source: Python source code used in timesheetGenGUI.exe
 
