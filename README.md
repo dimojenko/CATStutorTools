@@ -61,7 +61,7 @@ Otherwise the output file will be named:
 ## Report Form Filler
 Reads in a calendar file (.ics) and textfile of student names to
 output a Javascript file to copy/paste into a browser code insertion tool such as
-Tampermonkey. This allows a tutor to easily fill out the majority of the Tutor Report 
+TamperMonkey. This allows a tutor to easily fill out the majority of the Tutor Report 
 Form with the use of dropdown selections.
 
 ### Contents:
