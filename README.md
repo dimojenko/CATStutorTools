@@ -12,9 +12,9 @@ Reads in a calendar file (.ics) and textfile of student names to output a MS Wor
 
 ### Guide
 ---------
-For users who don't care to mess with the Python source code, only the following two files need to be downloaded and saved in the 
+For users who don't care to mess with the Python source code, only the following files need to be downloaded and saved in the 
 same folder:
-  - timesheetGenGUI.exe
+  - timesheetGenGUI.exe OR timesheetGenGUImac
   - timesheetTemplate.docx
 
 The Timesheet Generator requires a calendar file (.ics) as input. With Google Calendar, this can be accessed in the Settings menu 
