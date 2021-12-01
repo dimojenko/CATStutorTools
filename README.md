@@ -54,6 +54,10 @@ Otherwise the output file will be named:
 **In any case, it is recommended to check that the generated timesheet correctly matches your schedule, especially if sessions have
   been modified in any way. 
   
+**KNOWN ISSUES:
+Date widgets don't work for Mac version and dates have to be entered manually. The formatting on the Mac version of the generated
+Word document is also slightly different. 
+  
 ## Report Form Filler
 Reads in a calendar file (.ics) and textfile of student names to
 output a Javascript file to copy/paste into a browser code insertion tool such as
