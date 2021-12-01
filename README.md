@@ -93,8 +93,8 @@ of the developer tools, enter the following:
 	
 	document.getElementByID('QID22-Signature').toDataURL()
 	
-This will output a long string of image data that you can then copy/paste into your generated Javascript code. Paste the data between 
-the apostrophes in the line:
+This will output a long string of image data that you can then copy/paste into your generated Javascript code. In your Javascript code 
+in TamperMonkey or in another text editor, paste the data between the apostrophes in the line:
 
 	image.src='';
 	
