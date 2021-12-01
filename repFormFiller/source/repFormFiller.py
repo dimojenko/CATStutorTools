@@ -7,7 +7,7 @@
 	Form with the use of dropdown selections. 
 
 	requires:
-		* the following files to be in the runpath of repFormFiller.py:
+		* the following files to be in the runpath of timesheetGen.py:
 			* calendar2csv.py
 			* csv2timesheet.py
 """
@@ -54,15 +54,18 @@ def repFormFiller(inputICS, namesFile='none'):
 	# }
 	students = []
 	fullNames = []
+	tutor = []
 	if not namesFile == 'none':
 		namesList = nfile2list(namesFile)
-		fullNamesStrings = namesList[1]
+		tutorSplit, fullNamesStrings = namesList[0].split(','), namesList[1]
+		tutor = [tutorSplit[1].strip(), tutorSplit[0]]
 		for name in fullNamesStrings:
 			fullNames.append(name.split(','))
 
 	# generate csv file of meetings from input calendar file
 	todayDate = date.today()
 	todayDateStr = todayDate.strftime("%m/%d/%y")
+	print(todayDateStr)
 	inputCSV = cal2csv(inputICS, todayDateStr)
 	
 	with open(inputCSV, 'r') as inCSV, open('outputJS.js', 'w') as outputText:
@@ -111,7 +114,8 @@ def repFormFiller(inputICS, namesFile='none'):
 			""".replace('\t','')
 
 		outputJS += "var students = " + str(students) + ';\n'
-		outputJS += "var fullNames = " + str(fullNames) + ';'
+		outputJS += "var fullNames = " + str(fullNames) + ';\n'
+		outputJS += "var tutor = " + str(tutor) + ';'
 		outputJS += """
 			var pageBody = document.querySelector("body");
 
@@ -144,11 +148,10 @@ def repFormFiller(inputICS, namesFile='none'):
 			pageBody.prepend(studentLnameDrpdwn);
 
 			var image = new Image();
-		    // previously saved base64 png data of signature; use getDataURL() method
+		    // previously saved base64 png data of signature; use toDataURL() method
 		    image.src='';
-		    
+
 			window.onload = function() {
-				console.log(students);
 				var studentLnameSel = document.getElementById("studentLnameDrpdwn");
 				var studentFnameSel = document.getElementById("studentFnameDrpdwn");
 				var sTimesSel = document.getElementById("sTimesDrpdwn");
@@ -217,8 +220,8 @@ def repFormFiller(inputICS, namesFile='none'):
 						    selDrpdwnTxt(sportDrpdwn, stu['sport']);
 				    	}
 				    }
-				    document.getElementById("QR~QID18~1").value = "Dimitri";
-				    document.getElementById("QR~QID18~2").value = "Mojsejenko";  
+				    document.getElementById("QR~QID18~1").value = tutor[1];
+				    document.getElementById("QR~QID18~2").value = tutor[0];  
 			  	} 
 			  	else if (document.getElementById("QR~QID23~1")) {
 			  	    document.getElementById("QR~QID23~1").checked = true;
@@ -229,7 +232,7 @@ def repFormFiller(inputICS, namesFile='none'):
 			  	else if (document.getElementById("QR~QID25~1")) {
 			  		document.getElementById("QR~QID25~1").checked = true;
 				    document.getElementById("QR~QID26~1").checked = true;
-				    document.getElementById("QR~QID20").value = "hw";
+				    document.getElementById("QR~QID20").value = "homework";
 				    document.getElementById("QR~QID21").value = "no";
 				    var canvas = document.getElementById("QID22-Signature");
 				    var ctx = canvas.getContext("2d");
