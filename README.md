@@ -70,7 +70,8 @@ Form with the use of dropdown selections.
 
 ### Guide
 ---------
-First select the last name of the student from the first dropdown. If the list is empty, you may need to recreate the Javascript file, or a hard refresh of the browser may be necessary. Once the last name of the student is chosen, the next dropdown is
+First select the last name of the student from the first dropdown. If the list is empty, you may need to recreate the 
+Javascript file, or a hard refresh of the browser may be necessary. Once the last name of the student is chosen, the next dropdown is
 populated with the first names of students with the chosen last name. After the first name of the student is selected, choose 
 from the available times in the next dropdown, and then choose the class after that. 
 
@@ -84,7 +85,24 @@ the student showed up with their materials in a conducive location where homewor
 Again, these fields can be manually adjusted. If the signature has been setup correctly, then it should fill in as well; 
 otherwise it will need to be drawn manually. Once "Submit" is hit again, the whole form is submitted.
 
-**The browser will likely need to a hard refresh to clear the cache and function properly. This can be done with "Shift+F5" in Chrome on Windows, and "Command+Shift+r" in Chrome on Mac. 
+#### Signature Fill
+To setup the Javascript code so that it includes your signature, you will need to open up developer tools in the browser once you have
+navigated to the Report Form website. This can be done with "F12" in Chrome on Windows. Navigate to the last page with the signature by 
+filling out the rest of the fields with junk data. Then write your signature in the provided canvas in the field. In the "Console" tab 
+of the developer tools, enter the following:
+	
+	document.getElementByID('QID22-Signature').toDataURL()
+	
+This will output a long string of image data that you can then copy/paste into your generated Javascript code. Paste the data between 
+the apostrophes in the line:
+
+	image.src='';
+	
+Then save the Javascript code and make sure the version in TamperMonkey is modified as well if you are editing the code in a separate
+text editor.
+
+**The browser will likely need to a hard refresh to clear the cache and function properly. This can be done with "Shift+F5" in Chrome
+  on Windows, and "Command+Shift+r" in Chrome on Mac. 
 
 ## Contact
 If you have any questions, you can reach me at:
