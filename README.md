@@ -70,6 +70,8 @@ Form with the use of dropdown selections.
 - source: Python source code
 - TODO: executable
 
+![alt text](https://github.com/dimojenko/CATStutorTools/blob/main/reportFormFillerExample.png)
+
 ### Guide
 ---------
 First select the last name of the student from the first dropdown. If the list is empty, you may need to recreate the 
