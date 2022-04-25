@@ -70,7 +70,7 @@ Form with the use of dropdown selections.
 - source: Python source code
 - TODO: executable
 
-![alt text](https://github.com/dimojenko/CATStutorTools/blob/main/reportFormFillerExample.png)
+![alt text](https://github.com/dimojenko/CATStutorTools/blob/main/reportFormFillerExamplebkp.png)
 
 ### Guide
 ---------
