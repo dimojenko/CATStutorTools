@@ -10,6 +10,8 @@ Reads in a calendar file (.ics) and textfile of student names to output a MS Wor
 - timesheetTemplate.docx: timesheet template document which must be in same location that timesheetGenGUI.exe is run
 - source: Python source code used in timesheetGenGUI.exe
 
+![alt text](https://github.com/dimojenko/CATStutorTools/blob/main/timesheetGenGUIexample.png)
+
 ### Guide
 ---------
 For users who don't care to mess with the Python source code, only the following files need to be downloaded and saved in the 
